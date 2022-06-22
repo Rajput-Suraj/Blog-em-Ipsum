@@ -23,7 +23,7 @@ export function PostDetail({ post }) {
   const data = [];
 
   return (
-    <>
+    <div style={{ margin: '20px' }}>
       <h3 style={{ color: 'blue' }}>{post.title}</h3>
       <button>Delete</button> <button>Update title</button>
       <p>{post.body}</p>
@@ -33,6 +33,6 @@ export function PostDetail({ post }) {
           {comment.email}: {comment.body}
         </li>
       ))}
-    </>
+    </div>
   );
 }
