@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+import { Posts } from './components/Posts';
 import './App.css';
 
 function App() {
   return (
+    // provide React Query client to App
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Blog Posts</h1>
+      <Posts />
     </div>
   );
 }
